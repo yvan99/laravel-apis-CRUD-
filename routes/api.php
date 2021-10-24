@@ -13,6 +13,7 @@ Route::group(['middleware' => ['auth:sanctum']], function () {
     Route::put('/products/update/{id}', [ProductController::class, 'updateProduct']);
     Route::delete('/products/delete/{id}', [ProductController::class, 'deleteProduct']);
     Route::get('/logout', [authController::class, 'logout']);
+    //Route::get('/logout', [authController::class, 'logout']);
 });
 // Public routes
 Route::post('/register', [authController::class, 'registerUser']);

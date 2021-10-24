@@ -14,6 +14,7 @@ Route::group(['middleware' => ['auth:sanctum']], function () {
     Route::delete('/products/delete/{id}', [ProductController::class, 'deleteProduct']);
     Route::get('/logout', [authController::class, 'logout']);
     //Route::get('/logout', [authController::class, 'logout']);
+    //Route::get('/logout', [authController::class, 'logout']);
 });
 // Public routes
 Route::post('/register', [authController::class, 'registerUser']);
